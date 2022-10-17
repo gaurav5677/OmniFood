@@ -178,7 +178,7 @@ input[type=submit] {
 
 .btn-full:link,
 .btn-full:visited,
-input[type=submit]{
+input[type=submit] {
     background-color: #e67e22;
     color: white;
     border: 1px solid #e67e22;
@@ -194,9 +194,9 @@ input[type=submit]{
 }
 
 .btn:hover,
-.btn:active ,
+.btn:active,
 input[type=submit]:hover,
-input[typp=submit]:active{
+input[typp=submit]:active {
     background-color: #b05d14;
 
 }
@@ -228,7 +228,8 @@ header {
     height: 100vh;
     /*100%  of the Viewport  */
     background-size: cover;
-    background-position: center;   background-attachment: fixed ;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 
@@ -439,23 +440,25 @@ header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(images/back-customers.jpg);
     background-size: cover;
     color: white;
-    background-attachment: fixed ;
+    background-attachment: fixed;
 }
-blockquote{
+
+blockquote {
     padding: 2px;
     font-style: italic;
     line-height: 145%;
     position: relative;
     margin-top: 40px;
 }
-cite{
+
+cite {
     font-size: 90%;
     margin-top: 25px;
     display: block;
 }
 
 
-blockquote::before{
+blockquote::before {
     content: "\201C";
     font-size: 400%;
     display: block;
@@ -464,7 +467,8 @@ blockquote::before{
     left: -18px;
 
 }
-cite img{
+
+cite img {
     height: 50px;
     border-radius: 50%;
     margin-right: 5px;
@@ -476,52 +480,58 @@ cite img{
 /*--------------------------------------------------------------------------------------------------------------------------*/
 
 
-.section-plans{
+.section-plans {
     background-color: #f4f4f4;
 }
 
-.plan-box{
+.plan-box {
     background-color: #fff;
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
     box-shadow: 0 2px 2px rgb(202, 202, 202);
 }
-.plan-box h3{
+
+.plan-box h3 {
 
     text-align: center;
 }
-.plan-box div{
+
+.plan-box div {
     padding: 15px;
-    border-bottom: 1px solid  #e8e8e8 ;
-}
-.plan-box div:first-child{
-    background-color: #fcfcfc;
-    border-top-left-radius: 5px;
-    border-top-right-radius : 100px;
-}
-.plan-box div:last-child{
- text-align: center;
+    border-bottom: 1px solid #e8e8e8;
 }
 
-.plan-price{
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 100px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+}
+
+.plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 300;
     color: #e67e22;
 }
 
-.plan-price span{
+.plan-price span {
     font-size: 50%;
     font-weight: 500;
 }
-.plan-price-meal{
-font-size: 80%;
+
+.plan-price-meal {
+    font-size: 80%;
 }
 
 .plan-box ul {
     list-style: none;
 }
+
 .plan-box ul li {
     padding: 5px 0;
 }
@@ -532,12 +542,15 @@ font-size: 80%;
 /* ----------------------------------------Form section-------------------------------------------------------- */
 /*--------------------------------------------------------------------------------------------------------------------------*/
 
-.contact-form{
+.contact-form {
     width: 60%;
     margin: 0 auto;
 }
+
 input[type=text],
-input[type=email] , select, textarea{
+input[type=email],
+select,
+textarea {
     width: 100%;
     padding: 8px;
     border-radius: 10px;
@@ -545,39 +558,90 @@ input[type=email] , select, textarea{
 
 }
 
-textarea{
+textarea {
     height: 100px;
 }
 
-input[type=checkbox]{
-    margin:10px 5px 10px 0;
+input[type=checkbox] {
+    margin: 10px 5px 10px 0;
 
 }
 
-*:focus{
+*:focus {
     outline: none;
 }
 
-  
 
 
 
+/* ----------------------------------------------------------------------------------------------------------------*/
+/* ----------------------------------------Footer-------------------------------------------------------- */
+/*--------------------------------------------------------------------------------------------------------------------------*/
 
 
+footer {
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited{
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition:  0.2s;
+
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#ddd;
+}
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 170%;
+}
+
+.ion-social-facebook:hover{
+    color: #3b5998;
+    transition:  0.5s ;
+}
+.ion-social-twitter:hover{
+    color: #00aced;
+    transition:  0.5s;
+}
+.ion-social-googleplus:hover{
+    color: #dd4b39;
+    transition:  0.5s;
+}
+.ion-social-instagram:hover{
+    color: #bc2a8d;
+    transition:  0.5s;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+footer p{
+    color: #888;
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px; ;
+}
