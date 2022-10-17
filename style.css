@@ -1,8 +1,8 @@
 /* ----------------------------------------------------------------*/
-                        /* Orange Color : #e67e22  */
+/* Orange Color : #e67e22  */
 /*------------------------------------------------------------------*/
 /* ----------------------------------------------------------------*/
-                        /* basic Setup */
+/* basic Setup */
 /*------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
 
@@ -20,8 +20,9 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
 /* ----------------------------------------------------------------*/
-                        /* REUSABLE COMPONENTS */
+/* REUSABLE COMPONENTS */
 /*------------------------------------------------------------------*/
 
 .row {
@@ -29,17 +30,83 @@ html {
     margin: 0 auto;
 }
 
-  /* ------------------HEADING-------------- */
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+/* ------------------HEADING-------------- */
+
+h1,
+h2,
+h3 {
+
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+}
 
 h1 {
+    word-spacing: 4px;
     margin-top: 0;
     margin-bottom: 20px;
     color: #fff;
     font-size: 200%;
-    font-weight: 500;
     letter-spacing: 1px;
-    text-transform: uppercase;
-    word-spacing: 4px;
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+
+    /* width: 100px; */
+    margin: 30px 0;
+
+}
+
+
+h3 {
+    font-weight: 700;
+    font-size: 130%;
+    margin: 15px 0;
+    letter-spacing: -1px;
+}
+
+/* ----------------Paragraph--------- */
+
+.long-copy {
+    width: 70%;
+    text-align: center;
+    margin-left: 15%;
+
+
+}
+
+.box p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+/* ----------------Icon--------- */
+
+.icon-big {
+    font-size: 340%;
+    color:#e67e22 ;
+
 }
 
 /* ------------bUTTONS------------------- */
@@ -53,7 +120,7 @@ h1 {
 
     border-radius: 200px;
     font-weight: 380px;
-    transition:  0.4s , border 0.4s ;
+    transition: 0.4s, border 0.4s;
     /* padding: 10px; */
 }
 
@@ -74,15 +141,16 @@ h1 {
 
 }
 
-.btn:hover , 
-.btn:active{
+.btn:hover,
+.btn:active {
     background-color: #b05d14;
-   
+
 }
+
 .btn-full:hover,
 .btn-full:active {
-   
-    
+
+
     border: 1px solid #b05d14;
 }
 
@@ -95,7 +163,7 @@ h1 {
 }
 
 /* ----------------------------------------------------------------*/
-                        /* hEADER COMPONENTS */
+/* hEADER COMPONENTS */
 /*------------------------------------------------------------------*/
 
 
@@ -118,37 +186,38 @@ header {
     /* IS To translage the element  half of its width and of its height , up and to the left. */
 }
 
-.logo{
+.logo {
     width: auto;
     height: 100px;
     float: left;
     margin-top: 20px;
 }
-.main-nav{
+
+.main-nav {
     float: right;
     list-style: none;
     margin-top: 48px;
 }
 
-.main-nav li{
-    display:inline-block;
+.main-nav li {
+    display: inline-block;
     margin-left: 40px;
 
 }
 
 .main-nav li a:link,
 .main-nav li a:visited {
-    padding: 6px 0 ;
+    padding: 6px 0;
     color: white;
     text-decoration: none;
-    text-transform:uppercase;
+    text-transform: uppercase;
     font-size: 90%;
-    border-bottom: 2px solid transparent  ;
+    border-bottom: 2px solid transparent;
 
 }
 
 .main-nav li a:hover,
-.main-nav li a:active{
+.main-nav li a:active {
     border-bottom: 2px solid #e67e22;
-    transition: 0.7s ; 
-} 
+    transition: 0.7s;
+}
