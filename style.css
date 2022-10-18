@@ -246,17 +246,25 @@ header {
     /* IS To translage the element  half of its width and of its height , up and to the left. */
 }
 
-.logo {
+.logo , .logo-black {
     width: auto;
     height: 100px;
     float: left;
     margin-top: 20px;
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto  ;
+    float: left;
+    margin: 5px 0 ;
+}
+/* -------------------main nav------------------- */
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 48px;
+    margin-top: 50px;
 }
 
 .main-nav li {
@@ -280,6 +288,33 @@ header {
 .main-nav li a:active {
     border-bottom: 2px solid #e67e22;
     transition: 0.7s;
+}
+
+
+/* -------------------------------------STICKY nav------------------- */
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color:rgba(255, 255, 255, 0.871);
+    box-shadow: 0 2px 2px  #efefef;
+    z-index: 9999;
+}
+.main-nav {
+   
+    margin-top: 18px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 17px 0;
+    color: #555;
+    
+}
+
+.sticky .logo{display: none;}
+.sticky .logo-black{ display: block;
 }
 
 /* ----------------------------------------------------------------------------------------------------------------*/
