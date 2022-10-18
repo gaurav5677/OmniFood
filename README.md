@@ -1,4 +1,4 @@
 # OmniFood
 
-food-love-bf238c.netlify.app
+https://food-love-bf238c.netlify.app
 
